@@ -8376,6 +8376,7 @@ hterm.ScrollPort.prototype.decorate = function(div) {
   // the collision.
   this.screen_ = doc.createElement('x-screen');
   this.screen_.setAttribute('role', 'textbox');
+  this.screen_.setAttribute('contenteditable', '');
   this.screen_.setAttribute('tabindex', '-1');
   this.screen_.style.cssText = (
       'display: block;' +
